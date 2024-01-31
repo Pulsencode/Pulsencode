@@ -1,0 +1,15 @@
+21.10.23..09.57P
+    Made all the files available to be edited in a single folder. - Done
+    Remove all existing code. Done
+
+
+19.10.23..07.24P
+    Add more pages
+        -Services
+        -All sub service page
+        -privacy policy
+        -cancellation and refund
+        -career 
+        -terms and conditions 
+        -shipping and delivery 
+        
