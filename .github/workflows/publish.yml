@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - build # Change this if your development branch is different
+      
+permissions:
+  contents: write
 
 jobs:
   build:
