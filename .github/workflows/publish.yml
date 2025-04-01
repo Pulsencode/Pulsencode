@@ -1,0 +1,23 @@
+name: Build and Push Static Webpage
+
+on:
+  push:
+    branches:
+      - build # Change this if your development branch is different
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build and Push Static Webpage
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Push to Build Branch
+        uses: s0/git-publish-subdir-action@master
+        env:
+          REPO: self
+          BRANCH: build # Change if using a different deployment branch
+          FOLDER: . # Directory containing static files (HTML, CSS, JS)
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MESSAGE: "Deploy static webpage: ({sha}) {msg}"
