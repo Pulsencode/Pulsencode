@@ -33,14 +33,15 @@
 
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/f9ec1b096c.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top site-nav">
             <div class="container">
                 <a class="navbar-brand" href="../index.html">
                     <img src="../images/logo-pulsencode.png" alt="Pulsencode Logo" width="200" height="55">
@@ -51,22 +52,22 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-md-center">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                            <a class="nav-link" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../about.html">About</a>
+                            <a class="nav-link" href="../index.html#about-main">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./index.html">Services</a>
+                            <a class="nav-link active" aria-current="page" href="./index.html">Services</a>
                         </li>
                         <!-- <li class="nav-item">
                             <a class="nav-link" href="../career.html">Career</a>
                         </li> -->
                         <!-- TODO Add Link to pages -->
                         <li class="nav-item">
-                            <a class="nav-link" href="../contact.html">Contact</a>
+                            <a class="nav-link" href="../index.html#contact-hero">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -94,56 +95,51 @@
             <div class="container">
                 <div class="row align-items-center ">
                     <div class="col-lg-7 p-3 p-lg-5 pt-lg-3 ">
-                        <h1 class="display-5 fw-bold lh-1 text-danger">From Vision to Virtual: Our Services Redefine
-                            Excellence</h1>
-                        <p class="lead">Hey there! Ready to turn your awesome ideas into virtual wonders? At Pulsencode,
-                            we're all about making your digital dreams a colorful reality.</p>
+                        <h1 class="section-title text-md-start">From vision to launch</h1>
+                        <p class="lead text-muted text-md-start">We turn ideas into reliable web and application experiences—clear scope, thoughtful UX, and code you can grow with.</p>
                     </div>
-                    <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden rounded-3 border shadow-lg">
-                        <img class="rounded-lg-3" src="../images/services-main-hero.jpg" alt="From Vision to Virtual"
-                            width="720" height="500">
+                    <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden rounded-pc border">
+                        <img class="img-fluid w-100" src="../images/services-main-hero.jpg" alt="Pulsencode services"
+                            width="720" height="500" loading="lazy">
                     </div>
                 </div>
             </div>
         </section>
-        <div class="m-5">
-            <h2 class="display-4 fw-bold text-danger text-center m-3">Our Services</h2>
+        <div class="container text-center py-4">
+            <h2 class="section-title">What we offer</h2>
+            <p class="section-lead">Focused delivery across web and application development</p>
         </div>
         
         <section id="service-first">
             <div class="container my-5">
-                <div class="p-5 text-center bg-body-tertiary rounded-3">
-                    <i class="fa-solid fa-sitemap m-3 text-danger"></i>
-                    <h1 class="text-body-emphasis">Web Development</h1>
-                    <p class="col-lg-8 mx-auto fs-5 text-muted">
-                        This is a custom jumbotron featuring an SVG image at the top, some longer text that wraps early
-                        thanks to a responsive <code>.col-*</code> class, and a customized call to action.
+                <div class="p-5 text-center bg-body-tertiary rounded-pc border">
+                    <i class="fa-solid fa-sitemap m-3" style="color: var(--pc-accent);"></i>
+                    <h2 class="h3 fw-semibold text-body">Web development</h2>
+                    <p class="col-lg-8 mx-auto text-muted">
+                        Responsive sites, landing pages, and content-driven experiences built with maintainable frontends.
                     </p>
-                    <div class="d-inline-flex gap-2 mb-5">
-                        <button class="d-inline-flex align-items-center btn btn-danger btn-lg px-4 rounded-pill"
-                            type="button">
-                            Call to action
-                            <i class="fa-solid fa-chevron-right fa-lg m-2"></i>
-                        </button>
+                    <div class="d-inline-flex gap-2 mb-2 mt-3">
+                        <a href="../index.html#contact-hero" class="d-inline-flex align-items-center btn btn-lg btn-pc-primary px-4 rounded-pill">
+                            Start a project
+                            <i class="fa-solid fa-chevron-right ms-2"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
         <section id="service-second">
             <div class="container my-5">
-                <div class="p-5 text-center bg-body-tertiary rounded-3">
-                    <i class="fa-solid fa-sitemap m-3 text-danger"></i>
-                    <h1 class="text-body-emphasis">Application Development</h1>
-                    <p class="col-lg-8 mx-auto fs-5 text-muted">
-                        This is a custom jumbotron featuring an SVG image at the top, some longer text that wraps early
-                        thanks to a responsive <code>.col-*</code> class, and a customized call to action.
+                <div class="p-5 text-center bg-body-tertiary rounded-pc border">
+                    <i class="fa-solid fa-sitemap m-3" style="color: var(--pc-accent);"></i>
+                    <h2 class="h3 fw-semibold text-body">Application development</h2>
+                    <p class="col-lg-8 mx-auto text-muted">
+                        Custom applications tailored to your workflows, from MVP to production-ready releases.
                     </p>
-                    <div class="d-inline-flex gap-2 mb-5">
-                        <button class="d-inline-flex align-items-center btn btn-danger btn-lg px-4 rounded-pill"
-                            type="button">
-                            Call to action
-                            <i class="fa-solid fa-chevron-right fa-lg m-2"></i>
-                        </button>
+                    <div class="d-inline-flex gap-2 mb-2 mt-3">
+                        <a href="../index.html#contact-hero" class="d-inline-flex align-items-center btn btn-lg btn-pc-primary px-4 rounded-pill">
+                            Start a project
+                            <i class="fa-solid fa-chevron-right ms-2"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -188,16 +184,16 @@
         </section> -->
     </main>
 
-    <footer class="py-3 container">
+    <footer class="site-footer py-4 container border-top">
         <div class="row">
             <div class="col-6 col-md-3 mb-3">
-                <h5 class="text-center">Some Useful Links</h5>
+                <h5 class="text-center">Links</h5>
                 <ul class="nav flex-column text-center">
-                    <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-body-secondary">Home</a>
+                    <li class="nav-item mb-2"><a href="../index.html" class="nav-link p-0 text-body-secondary">Home</a>
                     </li>
                     <!-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li> -->
                     <!-- TODO Add all nav links here after creating pages -->
-                    <li class="nav-item mb-2"><a href="./about.html" class="nav-link p-0 text-body-secondary">About</a>
+                    <li class="nav-item mb-2"><a href="../index.html#about-main" class="nav-link p-0 text-body-secondary">About</a>
                     </li>
                 </ul>
             </div>
@@ -218,14 +214,14 @@
                     <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                         <label for="newsletter1" class="visually-hidden">Email address</label>
                         <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                        <button class="btn btn-danger" type="button">Subscribe</button>
+                        <button class="btn btn-pc-primary" type="button">Subscribe</button>
                     </div>
                 </form>
             </div>
         </div>
 
         <div class="d-flex flex-column flex-sm-row justify-content-between mb-2 border-top">
-            <p>&copy; 2023 Company, Inc. All rights reserved.</p>
+            <p>&copy; 2026 Pulsencode. All rights reserved.</p>
             <ul class="list-unstyled d-flex">
                 <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-x-twitter"></i></a>
                 </li>
@@ -238,12 +234,12 @@
     </footer>
 
     <div class="spinner-wrapper">
-        <div class="spinner-border text-danger" role="status">
+        <div class="spinner-border" style="color: var(--pc-accent);" role="status">
             <span class="visually-hidden">Loading...</span>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <script src="../js/main.js" defer></script>
 </body>
