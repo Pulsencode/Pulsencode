@@ -6,11 +6,11 @@ html {
 }
 
 :root {
-    --pc-accent: #b81414;
+    --pc-accent: #951010;
     --pc-accent-hover: #951010;
     --pc-body: #1a1a1a;
     --pc-muted: #5c5c5c;
-    --pc-surface: #f6f6f5;
+    --pc-surface: #951010;
     --pc-border: rgba(0, 0, 0, 0.06);
     --pc-radius: 0.75rem;
     --pc-radius-lg: 1.25rem;
