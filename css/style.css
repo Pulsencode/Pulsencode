@@ -188,8 +188,8 @@ a:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;
-    min-height: 100dvh;
+    min-height: 120vh;
+    min-height: 120dvh;
     position: relative;
 }
 
@@ -198,6 +198,17 @@ a:hover {
     position: absolute;
     inset: 0;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.55) 100%);
+    pointer-events: none;
+}
+
+#hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 140px; /* adjust for stronger/weaker blend */
+    background: linear-gradient(to bottom, rgba(255,255,255,0), #fff);
     pointer-events: none;
 }
 
@@ -264,12 +275,15 @@ a:hover {
 }
 
 .btn-pc-primary {
+    --bs-btn-color: #fff;
     --bs-btn-bg: var(--pc-accent);
     --bs-btn-border-color: var(--pc-accent);
     --bs-btn-hover-bg: var(--pc-accent-hover);
     --bs-btn-hover-border-color: var(--pc-accent-hover);
+    --bs-btn-hover-color: #fff;
     --bs-btn-active-bg: var(--pc-accent-hover);
     --bs-btn-active-border-color: var(--pc-accent-hover);
+    --bs-btn-active-color: #fff;
     font-weight: 500;
     border-radius: 999px;
 }

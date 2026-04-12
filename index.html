@@ -32,6 +32,11 @@
     <meta name="googlebot" content="index, follow"> <!-- Googlebot specific directives -->
 
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/f9ec1b096c.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -85,16 +90,33 @@
                 <a href="#about-main" class="btn btn-pc-outline">Meet our team</a>
             </div>
         </section>
+
+        <section id="about-main">
+            <div class="container col-xxl-10 px-2 pt-4 pb-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5">
+                    <div class="col-lg-6">
+                        <h2 class="section-title text-md-start">About us</h2>
+                        <p class="lead text-muted text-md-start mb-4">Welcome to Pulsencode, where innovation meets excellence in the world of web development. At Pulsencode, we are more than just a technology company; we are your dedicated partners in crafting cutting-edge web solutions that propel your business into the digital future.Step into the world of Pulsencode, where web development is not just a service, it's our passion, and we're on a mission to revolutionize the digital landscape!</p>
+                    </div>
+                    <div class="image-container col-10 col-sm-8 col-lg-6 mx-auto mx-lg-0">
+                        <img src="images/about_main.jpg" class="d-block rounded mx-lg-auto img-fluid" alt="Developing Apps"
+                            width="700" height="500" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="second-hero">
-            <div class="container col-xxl-8 px-4">
+            <div class="container col-xxl-10 px-2">
                 <div class="row flex-lg-row-reverse align-items-center g-5">
                     <div class="image-container col-10 col-sm-8 col-lg-6 mx-auto mx-lg-0">
-                        <img src="./images/develop_app_bg.jpg" class="d-block mx-lg-auto img-fluid"
-                            alt="Developing Apps" width="700" height="500" loading="lazy">
+                        <img src="./images/develop_app_bg.jpg" class="d-block mx-lg-auto "
+                            alt="Developing Apps" width="700" height="400" loading="lazy">
                     </div>
                     <div class="col-lg-6">
                         <h2 class="section-title text-md-start">Develop your own ideas with us</h2>
-                        <p class="lead text-muted text-md-start mb-4">Embark on a journey of innovation with our tailored solutions for custom app
+                        <p class="lead text-muted text-md-start mb-4">Embark on a journey of innovation with our
+                            tailored solutions for custom app
                             development. At Pulsencode we specialize in crafting unique and powerful applications
                             designed to meet your specific needs. Our dedicated team of skilled developers collaborates
                             with you to understand your vision, goals, and requirements, ensuring that the final product
@@ -106,41 +128,8 @@
                 </div>
             </div>
         </section>
-        <section id="our-clients" class="section-surface py-5">
-            <div class="container py-4 text-center">
-                <h2 class="section-title">Trusted by teams</h2>
-                <p class="section-lead mb-4">Partners we have worked with</p>
-                <div class="row justify-content-center align-items-center g-4">
-                    <div class="col-6 col-md-auto">
-                        <img src="./images/clients/hyovis_logo.png" alt="Hyovis Technologies">
-                    </div>
-                    <div class="col-6 col-md-auto">
-                        <img src="./images/clients/the_youfinity_logo.png" alt="The Youfinity">
-                    </div>
-                    <div class="col-6 col-md-auto">
-                        <img src="./images/clients/thegroverzmart_logo.png" alt="The Groverzmart">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="about-main">
-            <div class="px-4 pt-5 pb-4 my-4 text-center border-bottom">
-                <h2 class="section-title">About us</h2>
-                <div class="col-lg-10 mx-auto">
-                    <p class="lead text-muted mb-4">Welcome to Pulsencode, where innovation meets excellence in the world of web
-                        development. At Pulsencode, we are more than just a technology company; we are your dedicated
-                        partners in crafting cutting-edge web solutions that propel your business into the digital
-                        future.Step into the world of Pulsencode, where web development is not just a service, it's our
-                        passion, and we're on a mission to revolutionize the digital landscape!</p>
-                </div>
-                <div class="overflow-hidden" style="max-height: 50vh;">
-                    <div class="container px-3 px-md-5">
-                        <img src="images/about_main.jpg" class="img-fluid rounded-pc mb-4"
-                            alt="Pulsencode team and workspace" width="700" height="500" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </section>
+
+        
         <section id="about-mission">
             <div class="container my-5">
                 <div class="p-5 text-center section-surface rounded-pc border">
@@ -193,49 +182,32 @@
                 </div>
             </div>
         </section>
-        <section id="about-why-us" class="pb-5">
-            <div class="container px-4" id="custom-cards">
-                <h2 class="section-title text-center">Why Pulsencode</h2>
-
-                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-4">
-
-                    <div class="col">
-                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-pc"
-                            style="background-image: url('./images/about_track_record.jpg');">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                                <h3 class="pt-5 mt-5 mb-4 lh-1 fw-bold text-center">Proven Track Record</h3>
-                            </div>
-                        </div>
+        <section id="our-clients" class="section-surface py-5">
+            <div class="container py-4 text-center">
+                <h2 class="section-title">Trusted by teams</h2>
+                <p class="section-lead mb-4">Partners we have worked with</p>
+                <div class="row justify-content-center align-items-center g-4">
+                    <div class="col-6 col-md-auto">
+                        <img src="./images/clients/hyovis_logo.png" alt="Hyovis Technologies">
                     </div>
-                    <div class="col">
-                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-pc"
-                            style="background-image: url('./images/about_client.jpg');">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                                <h3 class="pt-5 mt-5 mb-4 lh-1 fw-bold text-center" style="color: #ff8a8a;">Client-centric approach
-                                </h3>
-                            </div>
-                        </div>
+                    <div class="col-6 col-md-auto">
+                        <img src="./images/clients/the_youfinity_logo.png" alt="The Youfinity">
                     </div>
-                    <div class="col">
-                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-pc"
-                            style="background-image: url('./images/about_support.jpg');">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                                <h3 class="pt-5 mt-5 mb-4 lh-1 fw-bold text-center">Continuous Support</h3>
-                            </div>
-                        </div>
+                    <div class="col-6 col-md-auto">
+                        <img src="./images/clients/thegroverzmart_logo.png" alt="The Groverzmart">
                     </div>
                 </div>
             </div>
         </section>
-        <section id="contact-hero" class="pt-5 mt-4">
+        <section id="contact-hero" class="pt-2 mt-4">
             <div class="container text-center py-4">
-                <h2 class="section-title">Get in touch</h2>
-                <p class="section-lead">Ready to turn your ideas into reality? Send a message and we will get back to you.</p>
+                <h2 class="section-title">Get in touch. Sent a Message</h2>
+                <p class="section-lead">Ready to turn your ideas into reality? Send a message and we will get back to
+                    you.</p>
             </div>
         </section>
         <section id="contact-lecf">
             <div class="container pb-4">
-                <h2 class="section-title text-center pb-3 mb-4 border-bottom">Send a message</h2>
                 <div class="row mt-2 g-lg-5">
                     <div class="col-lg-4">
                         <div class="info">
@@ -309,10 +281,12 @@
             <div class="col-6 col-md-3 mb-3">
                 <h5 class="text-center">Links</h5>
                 <ul class="nav flex-column text-center">
-                    <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-body-secondary">Home</a>
+                    </li>
                     <!-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li> -->
                     <!-- TODO Add Link to pages -->
-                    <li class="nav-item mb-2"><a href="#about-main" class="nav-link p-0 text-body-secondary">About</a></li>
+                    <li class="nav-item mb-2"><a href="#about-main" class="nav-link p-0 text-body-secondary">About</a>
+                    </li>
                 </ul>
             </div>
 
@@ -342,14 +316,11 @@
         <div class="d-flex flex-column flex-sm-row justify-content-between mb-2 border-top">
             <p>&copy; 2026 Pulsencode. All rights reserved.</p>
             <ul class="list-unstyled d-flex">
-                <li class="ms-3"><a class="link-body-emphasis" href="#"><i
-                            class="fa-brands fa-x-twitter"></i></a>
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-x-twitter"></i></a>
                 </li>
-                <li class="ms-3"><a class="link-body-emphasis" href="#"><i
-                            class="fa-brands fa-facebook"></i></a>
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-facebook"></i></a>
                 </li>
-                <li class="ms-3"><a class="link-body-emphasis" href="#"><i
-                            class="fa-brands fa-instagram"></i></a>
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-instagram"></i></a>
                 </li>
             </ul>
         </div>

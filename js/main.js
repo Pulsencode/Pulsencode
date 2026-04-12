@@ -3,8 +3,10 @@ const navEl = document.querySelector('.navbar');
 const navLinksEl = document.querySelectorAll('.navbar-nav .nav-link');
 
 if (navEl) {
+    const alwaysSolid = navEl.dataset.navSolid === 'always';
+
     const setNavState = () => {
-        const solid = window.scrollY >= 56;
+        const solid = alwaysSolid || window.scrollY >= 56;
         navEl.classList.toggle('navbar-scrolled', solid);
         navLinksEl.forEach((link) => link.classList.toggle('black-link', solid));
         navEl.classList.toggle('navbar-dark', !solid);
